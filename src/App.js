@@ -1,11 +1,29 @@
-import React from 'react';
-import './App.css';
-import Home from './Pages/Home'
+import React from "react";
+import "./App.css";
+import Home from "./Pages/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
-      <h1>google</h1>
+
+      <Router>
+
+        <Switch>
+          <Route path='/'>
+            <Home />
+
+          </Route>
+        
+          <Route path="/search">
+            <h1> search page </h1> 
+            
+          </Route>
+        </Switch>
+
+
+      </Router>
+      
     </div>
   );
 }
