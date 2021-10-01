@@ -1,6 +1,7 @@
 import React from "react";
 import { useStateValue } from './StateProvider'
-import { useGoogleSearch}  from './useGoogleSearch'
+import useGoogleSearch  from './useGoogleSearch'
+
 
 function SearchPage() {
 
@@ -9,12 +10,12 @@ function SearchPage() {
 
     console.log(data)
   return (
-    <div ClassName="searchPage">
-      <div ClassName="searchPage__header">
+    <div className="searchPage">
+      <div className="searchPage__header">
           <h1>{term}</h1>
       </div>
 
-      <div ClassName="searchPage__results"></div>
+      <div className="searchPage__results"></div>
     </div>
   );
 }
